@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lg: hsl(217, 12%, 63%);
+    --mg: hsl(216, 12%, 54%);
+    --dBlue: hsl(213, 19%, 18%);
+    --dBlue2: hsl(213, 20%, 22%);
+    --vdBlue: hsl(216, 12%, 8%);
+
+    --interFont: 'Inter', sans-serif;
+    --overPass: 'Overpass', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--vdBlue);
+    font-family: var(--overPass);
+}
+
+.rating-card {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    background-color: var(--dBlue);
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 2rem;
+    border-radius: 20px;
+}
+.icon-star {
+    background-color: var(--dBlue2);
+    border-radius: 100%;
+    padding: 0.6rem;
+    width: 2rem;
+    height: 2rem;
+}
+.icon {
+    padding-bottom: 1.rem;
+}
+
+
+.rating-text h1 {
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.rating-text p {
+    font-size: 0.9rem;
+    color: var(--lg);
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+
+.ratings ul {
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ratings ul li button {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--dBlue2);
+    border: none;
+    color: var(--lg);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.ratings ul li button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.ratings ul li button:focus {
+    background-color: var(--mg);
+    color: var(--white);
+}
+
+.submit {
+    text-transform: uppercase;
+    padding: 0.8rem 7.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 700;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+
+/* Thank you container */
+
+.thankyou-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 390px;
+    background-color: var(--dBlue);
+    margin-top: 10%;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+
+.selection {
+    margin: 2rem 0;
+    color: var(--primary);
+    text-align: center;
+}
+
+.selection p {
+    background-color: var(--dBlue2);
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+}
+.thankyou-text h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--white);
+    padding: 0.7rem 0;
+}
+
+.thankyou-text p{
+    font-size: 0.9rem;
+    color: var(--lg);
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
